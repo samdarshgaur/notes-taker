@@ -1,0 +1,37 @@
+.form-page {
+    padding: 3rem;
+}
+
+.create-note-header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.notes-form-container {
+    font-size: 2rem;
+}
+
+.notes-form {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.title-container > input, .content-container > textarea {
+    padding: 1rem;
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.save-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(4, 155, 4);
+}
+
+.save-btn:hover {
+    background-color: green;
+    cursor: pointer;
+}

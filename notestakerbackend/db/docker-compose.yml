@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: notesdb
+      POSTGRES_USER: notestaker
+      POSTGRES_PASSWORD: notestaker
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports: 
+      - 8080:8080
+
+
+# To connect with the postgres database, use this url - postgresql://notestaker:notestaker@localhost:5432/notesdb
